@@ -8,14 +8,14 @@
 
         public int EventElementID { get; set; }
 
-        public int EnrolmentID { get; set; }
+        public int? Position { get; set; }
 
-        public int Position { get; set; }
+        public TimeSpan? FinishTime { get; set; }
 
-        public int FinishPosition { get; set; }
+        public string ResultStatus { get; set; } = "Completed";
 
-        public TimeSpan FinishTime { get; set; }
+        public Participant? Participant { get; set; }
 
-        public string ResultStatus { get; set; } = string.Empty;
+        public EventElement? EventElement { get; set; }
     }
 }
